@@ -36,13 +36,26 @@
     }
     .menu {
         width: 100%;
-        margin: 102px 10px;
+        margin: 102px 0;
     }
     .opcoes {
         margin: 31px 19px 0 19px;
+        display: flex;
+        flex-direction: column;
     }
     .opcoes h1{
         font-family: 'Righteous', cursive;
         justify-content: flex-start;
+        margin-bottom: 17px;
+    }
+    .carrossel {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .itens {
+        width: 172px;
+        height: 216px;
+        border-radius: 9px;
+        background-color: white;
     }
 }
