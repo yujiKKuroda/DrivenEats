@@ -3,12 +3,9 @@
 	box-sizing: border-box;
 }
 
-p {
-    display: block;
-}
-
 /*Todos os estilos serão feitos por aqui*/
 @media (max-width: 736px) {
+
     body {
         background-color: #e5e5e5;
         display: flex;
@@ -27,6 +24,8 @@ p {
         justify-content: center;
         box-shadow: 0px 5px 5px #9a9a9a;
     }
+
+    /*------------------------------------------------------------------------------------------------*/
     /*Título*/
     .titulo h1 {
         font-family: 'Righteous', cursive;
@@ -39,26 +38,34 @@ p {
         font-size: 18px;
         margin-left: 21px;
     }
+
+    /*------------------------------------------------------------------------------------------------*/
     /*Menu do meio*/
     .menu {
         width: 100%;
         margin: 102px 0;
     }
+    /*Linhas (prato, bebida, sobremesa)*/
     .opcoes {
         margin: 31px 19px 0 19px;
         display: flex;
         flex-direction: column;
     }
+    /*Título dos menus*/
     .opcoes h1{
         font-family: 'Righteous', cursive;
         justify-content: flex-start;
         margin-bottom: 17px;
     }
+    /*Dita como funciona o menu*/
     .carrossel {
         display: flex;
         justify-content: flex-start;
         overflow-x: scroll;
     }
+
+    /*------------------------------------------------------------------------------------------------*/
+    /*Cartão de cada item*/
     .itens {
         width: 172px;
         height: 216px;
@@ -68,12 +75,14 @@ p {
         box-shadow: 0 2px 10px #c0c0c0, 0 2px 10px #c0c0c0;
         flex-direction: column;
     }
+    /*Imagem de cada cartão*/
     .itens img {
         width: 144px;
         height: 87px;
         border-radius: 4px;
         margin: 18px 14px;
     }
+    /*Título do cartão*/
     .itens h1{
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
@@ -81,6 +90,7 @@ p {
         margin: 0 15px;
         color: #333333;
     }
+    /*Descrição de cada cartão*/
     .descricao{
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
@@ -88,6 +98,7 @@ p {
         margin: 12px 15px;
         color: #a6a6a6;
     }
+    /*Preço de cada cartão*/
     .preco {
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
@@ -95,6 +106,9 @@ p {
         margin-bottom: 17px;
         color: black;
     }
+
+    /*------------------------------------------------------------------------------------------------*/
+    /*Menu inferior para finalizar o pedido*/
     .rodape {
         position: fixed;
         display: flex;
@@ -106,6 +120,7 @@ p {
         justify-content: center;
         bottom: 0;
     }
+    /*Botão do menu inferior*/
     .rodape button {
         height: 61px;
         width: 100%;
@@ -117,4 +132,5 @@ p {
         border: none;
         border-radius: 50px;
       }
+      
 }
