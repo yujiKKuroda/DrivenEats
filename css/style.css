@@ -3,6 +3,10 @@
 	box-sizing: border-box;
 }
 
+p {
+    display: block;
+}
+
 /*Todos os estilos serão feitos por aqui*/
 @media (max-width: 736px) {
     body {
@@ -21,6 +25,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        box-shadow: 0px 5px 5px #9a9a9a;
     }
     /*Título*/
     .titulo h1 {
@@ -34,6 +39,7 @@
         font-size: 18px;
         margin-left: 21px;
     }
+    /*Menu do meio*/
     .menu {
         width: 100%;
         margin: 102px 0;
@@ -50,13 +56,16 @@
     }
     .carrossel {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        overflow-x: scroll;
     }
     .itens {
         width: 172px;
         height: 216px;
+        margin: 0 8px;
         border-radius: 9px;
         background-color: white;
+        box-shadow: 0 2px 10px #c0c0c0, 0 2px 10px #c0c0c0;
         flex-direction: column;
     }
     .itens img {
@@ -86,4 +95,26 @@
         margin-bottom: 17px;
         color: black;
     }
+    .rodape {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 92px;
+        background-color: white;
+        justify-content: center;
+        bottom: 0;
+    }
+    .rodape button {
+        height: 61px;
+        width: 100%;
+        margin: 0 26px;
+        background-color: #cbcbcb;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20;
+        color: #ffffff;
+        border: none;
+        border-radius: 50px;
+      }
 }
