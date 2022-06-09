@@ -57,5 +57,33 @@
         height: 216px;
         border-radius: 9px;
         background-color: white;
+        flex-direction: column;
+    }
+    .itens img {
+        width: 144px;
+        height: 87px;
+        border-radius: 4px;
+        margin: 18px 14px;
+    }
+    .itens h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 15px;
+        color: #333333;
+    }
+    .descricao{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: lighter;
+        margin: 12px 15px;
+        color: #a6a6a6;
+    }
+    .preco {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-bottom: 17px;
+        color: black;
     }
 }
