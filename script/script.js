@@ -20,6 +20,7 @@ function selectPratos (item) {
     nomePrato = document.querySelector(".pratos .selecionado .produto").innerHTML;
     precoPrato = document.querySelector(".pratos .selecionado .preco p").innerHTML;
     precoPrato = precoPrato.substring(2);
+    precoPrato = precoPrato.replace(/,/g, ".")
 }
 
 function selectBebidas (item) {
@@ -34,6 +35,7 @@ function selectBebidas (item) {
     nomeBebida = document.querySelector(".bebidas .selecionado .produto").innerHTML;
     precoBebida = document.querySelector(".bebidas .selecionado .preco p").innerHTML;
     precoBebida = precoBebida.substring(2);
+    precoBebida = precoBebida.replace(/,/g, ".")
 }
 
 function selectSobremesas (item) {
@@ -48,6 +50,7 @@ function selectSobremesas (item) {
     nomeSobremesa = document.querySelector(".sobremesas .selecionado .produto").innerHTML;
     precoSobremesa = document.querySelector(".sobremesas .selecionado .preco p").innerHTML;
     precoSobremesa = precoSobremesa.substring(2);
+    precoSobremesa = precoSobremesa.replace(/,/g, ".")
 }
 
 function marcar() {
