@@ -1,16 +1,19 @@
 let prato = 0;
+let nomePrato = "";
 let bebida = 0;
+let nomeBebida = "";
 let sobremesa = 0;
+let nomeSobremesa = "";
 
 function selectPratos (item) {
     if (prato <= 0){
         prato = 1;
     }
     const itemClicado = document.querySelector(".pratos .selecionado");
+    nomePrato = document.querySelector(".pratos .selecionado .produto").innerHTML;
     if (itemClicado !== null) {
         itemClicado.classList.remove("selecionado");
     }
-
     item.classList.add("selecionado");
 }
 
@@ -22,7 +25,6 @@ function selectBebidas (item) {
     if (itemClicado !== null) {
         itemClicado.classList.remove("selecionado");
     }
-
     item.classList.add("selecionado");
 }
 
@@ -34,7 +36,6 @@ function selectSobremesas (item) {
     if (itemClicado !== null) {
         itemClicado.classList.remove("selecionado");
     }
-
     item.classList.add("selecionado");
 }
 
