@@ -145,6 +145,32 @@
         color: #ffffff;
         border: none;
         border-radius: 50px;
-      }
-      
+    }
+    .finalizar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 92px;
+        background-color: white;
+        justify-content: center;
+        bottom: 0;
+        z-index: 4;
+    }
+    /*Botão do menu inferior*/
+    .finalizar button {
+        height: 61px;
+        width: 100%;
+        margin: 0 26px;
+        background-color: #32b72f;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20;
+        color: #ffffff;
+        border: none;
+        border-radius: 50px;
+    }
+    .escondido {
+        display: none;
+    }
 }
