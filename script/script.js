@@ -19,6 +19,7 @@ function selectPratos (item) {
     item.classList.add("selecionado");
     nomePrato = document.querySelector(".pratos .selecionado .produto").innerHTML;
     precoPrato = document.querySelector(".pratos .selecionado .preco p").innerHTML;
+    precoPrato = precoPrato.substring(2);
 }
 
 function selectBebidas (item) {
@@ -32,6 +33,7 @@ function selectBebidas (item) {
     item.classList.add("selecionado");
     nomeBebida = document.querySelector(".bebidas .selecionado .produto").innerHTML;
     precoBebida = document.querySelector(".bebidas .selecionado .preco p").innerHTML;
+    precoBebida = precoBebida.substring(2);
 }
 
 function selectSobremesas (item) {
@@ -45,6 +47,7 @@ function selectSobremesas (item) {
     item.classList.add("selecionado");
     nomeSobremesa = document.querySelector(".sobremesas .selecionado .produto").innerHTML;
     precoSobremesa = document.querySelector(".sobremesas .selecionado .preco p").innerHTML;
+    precoSobremesa = precoSobremesa.substring(2);
 }
 
 function marcar() {
@@ -54,4 +57,14 @@ function marcar() {
         confirmacao = document.querySelector(".finalizar");
         confirmacao.classList.remove("escondido");
     }
+}
+
+function enviarPedido () {
+    let a = parseFloat(precoPrato);
+    let b = parseFloat(precoBebida);
+    let c = parseFloat(precoSobremesa);
+    const soma = a + b + c;
+    const texto = `Olá, gostaria de fazer o pedido:\n- Prato: ${nomePrato}\n- Bebida: ${nomeBebida}\n- Sobremesa: ${nomeSobremesa}\nTotal: R$ ${soma.toFixed(2)}`;
+    const link = "https://wa.me/5541992854065?text=" + encodeURIComponent(texto);
+    window.open(link);
 }
