@@ -1,6 +1,6 @@
-# projeto3-driveneats
+# DrivenEats
 
-3º projeto do bootcamp Driven, realizado em junho de 2022.
+Pequena implementação demonstrando uma aplicação para pedidos de delivery.
 
 Imagens dos sites: 
 - https://norecipes.com/katsu-curry/
