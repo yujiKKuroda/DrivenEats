@@ -68,6 +68,6 @@ function enviarPedido () {
     let c = parseFloat(precoSobremesa);
     const soma = a + b + c;
     const texto = `Olá, gostaria de fazer o pedido:\n- Prato: ${nomePrato}\n- Bebida: ${nomeBebida}\n- Sobremesa: ${nomeSobremesa}\nTotal: R$ ${soma.toFixed(2)}`;
-    const link = "https://wa.me/5541992854065?text=" + encodeURIComponent(texto);
+    const link = "https://wa.me/*************?text=" + encodeURIComponent(texto);
     window.open(link);
 }
